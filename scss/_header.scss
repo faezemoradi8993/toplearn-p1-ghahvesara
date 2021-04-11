@@ -1,0 +1,85 @@
+//  start header
+.header{
+   position: relative;
+   background-image: url(../images/bakcground-header.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   .overlay{
+        .nav-bar{
+            z-index: 1000;
+            position: fixed;
+            background-color: rgba(0,0,0, 0.6);
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .hamburger-icon{
+                    display: none;
+                    font-size: 35px;
+                    color: white;
+                    cursor: pointer;
+
+                }
+                ul{ 
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between; 
+                    li{  
+                       margin-right: 10px;
+                        display: flex;
+                        justify-content: center;
+                        list-style: none;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            &:hover{
+                                color: lightblue;
+                            }
+                        }
+                    }
+                }    
+                .logo{
+                    display: flex;  
+                    justify-content: flex-end; 
+                    width: 20%;
+                    img{
+                        width: 70px;
+                    }
+                }   
+                        
+            }
+            
+        }
+        .header-caption {
+            width: 100%;
+            text-align: center;
+          
+            position: absolute;
+            top: 40%;
+            right:0%;
+            color: white;
+            h1{
+                font-size: $font-size-2;
+              
+                
+            }
+            p{
+                font-size: $font-size-5;
+                
+            }
+        }
+    }
+
+}
+
+
+
+// end header

@@ -1,0 +1,304 @@
+@media  screen and (max-width : 992px) {
+    .header{
+        .overlay{
+            .header-caption {
+                padding: 0 10%;
+                top: 30%;
+            }
+             .nav-bar{
+                 .container{
+                    ul{  
+                        display: none;
+                    }
+                    .hamburger-icon{
+                        display: block;
+                    }     
+                }
+            }
+        }
+    }
+    footer{ 
+        .footer{
+                height: 450px;        
+        }
+     }  
+     .sidebar{
+       
+        &.show{
+            right:0px;
+    
+        }
+    }   
+}
+@media  screen and (max-width : 768px) {
+    footer{ 
+        .footer{
+            font-size:$font-size-6;  
+                    
+        }
+        .copyright{
+            font-size:$font-size-7;
+        }  
+     }
+    .header{
+        .overlay{
+             .header-caption {
+                 h1{
+                     font-size: $font-size-3;
+                 }
+                 p{
+                     font-size:$font-size-6;
+                 }
+             }
+         }
+     }
+     .our-story{
+        height: 600px;
+        padding: 0px 0;
+        .container{
+            flex-direction: column;
+            .story-caption{
+                width: 100%;
+                padding-left: 0;
+                h1{
+                    text-align: center;
+                    font-size: $font-size-5;
+                   
+                }
+                p{
+                    font-size: $font-size-7;
+                   margin-bottom: 10px;
+                }
+            }
+            .story-img{
+                width: 100%;
+            }
+        }
+    }
+    .sweet{
+
+        height: 400px;
+        padding: 0px 0;
+        .overlay{
+            .container{
+                .sweet-caption{
+                   
+                    h1{
+
+                        font-size: $font-size-3;
+                    }
+                    p{
+                        font-size: $font-size-6;
+                        margin: auto;
+                        line-height: 2;
+                       margin-bottom: 10px;
+                    }
+                }  
+             }
+        }
+        
+    }
+    .menu{
+       
+        height: 800px;
+    
+        .container{
+            flex-direction: column;
+            .menu-caption{
+                width: 100%;
+                padding-left: 0px ;
+                h1{
+                    font-size: $font-size-5;
+                  
+    
+                }
+                p{
+                    font-size: $font-size-7;
+                    line-height: 2;
+                   margin-bottom: 10px;
+                }
+            }
+           .menu-img{
+               width: 100%;
+              margin-bottom: 10px;
+              ul{
+                  li{
+                      img{
+                          height: 200px;
+                          
+                      }
+    
+                  }
+              }
+    
+            }
+        }
+    }
+    .hot{
+        height: 250px;
+        .overlay{
+            .container{
+                flex-direction: column;
+                .hot-caption{
+                    h1{
+                        font-size: $font-size-3;
+                    }
+                    p{
+                        font-size: $font-size-5;
+
+                    }
+                }
+            }
+        }
+    }
+    .delight{
+
+        height: 700px;
+        padding: 0px 0;
+        .container{
+            flex-direction: column;
+            .delight-caption{
+                width: 100%;
+                padding-left: 0px;
+                h1{
+                    font-size: $font-size-6;
+               
+                }
+                p{
+                    font-size: $font-size-7;
+                    text-align: center;
+                    line-height: 3;
+                   margin-bottom: 10px;
+                }
+            }
+            .delight-imgs{
+               margin-bottom: 10px;
+                width: 100%;
+                ul{
+                    width: 100%;
+                    li{
+                        img{
+                            height: 300px;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media  screen and (max-width : 425px) {
+    .header{
+        .overlay{
+             .header-caption {
+                 top: 30%;
+                 h1{
+                     font-size: $font-size-3;   
+                 }
+                 p{
+                     font-size: $font-size-7;
+                 }
+             }
+         }
+     
+     }
+     .sweet{
+
+        height: 500px;
+        padding: 30px 0;
+        .overlay{
+            .container{
+                .sweet-caption{
+                    h1{
+
+                        font-size: $font-size-4;
+                    }
+                    p{
+                        font-size: $font-size-7;
+
+                    }
+                }  
+             }
+        }
+        
+    }
+    footer{ 
+        color: white;
+        .footer{
+               padding :30px 15%;
+                height: 550px;
+              
+                .overlay{    
+                    
+                        .footer-contactus{
+                            line-height: 2;
+                            flex-direction: column;
+                            .newsleter{
+                                h1{
+                                    padding-bottom: 10px;
+                                }
+                                margin-bottom: 20px;
+                            }
+                            .social{
+                                h1{
+                                    padding-bottom: 10px;
+                                }
+                              
+                            }
+                            
+                        }
+                }                 
+        }
+      
+    }
+    .delight{
+
+        height: 600px;
+       
+        .container{
+      
+            .delight-imgs{
+            
+                ul{
+                   
+                    li{
+                        img{
+                            height: 200px;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu{
+        height: 750px;
+        .container{
+        
+           .menu-img{
+            
+              ul{
+                  li{
+                      img{
+                          height: 150px;
+                          
+                      }
+    
+                  }
+              }
+    
+            }
+        }
+    }
+    .our-story{
+        height: 500px;
+        .container{
+            .story-img{
+                width: 100%;
+               
+            }
+        }
+    }
+   
+}

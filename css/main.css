@@ -1,0 +1,801 @@
+@font-face {
+  font-family: "vazir";
+  src: url(../fonts/vazir.eot) format("eot"), url(../fonts/vazir.ttf) format("truetype"), url(../fonts/vazir.woff) format("woff"), url(../fonts/vazir.woff2) format("woff2");
+}
+
+body {
+  font-family: "vazir";
+  direction: rtl;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+}
+
+.back-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  z-index: 1001;
+  width: 33%;
+  height: 100vh;
+  top: 70px;
+  right: -33%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.sidebar ul {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 0.5px solid rgba(169, 167, 167, 0.5);
+}
+
+.sidebar ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+  color: purple;
+}
+
+.header {
+  position: relative;
+  background-image: url(../images/bakcground-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .overlay .nav-bar {
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .overlay .nav-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .overlay .nav-bar .container .hamburger-icon {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.header .overlay .nav-bar .container ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .overlay .nav-bar .container ul li {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.header .overlay .nav-bar .container ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .overlay .nav-bar .container ul li a:hover {
+  color: lightblue;
+}
+
+.header .overlay .nav-bar .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 20%;
+}
+
+.header .overlay .nav-bar .container .logo img {
+  width: 70px;
+}
+
+.header .overlay .header-caption {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  color: white;
+}
+
+.header .overlay .header-caption h1 {
+  font-size: 40px;
+}
+
+.header .overlay .header-caption p {
+  font-size: 20px;
+}
+
+.our-story {
+  width: 100%;
+  height: 500px;
+  padding: 50px 0;
+}
+
+.our-story .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-story .container .story-caption {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2;
+}
+
+.our-story .container .story-caption h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.our-story .container .story-caption p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.our-story .container .story-img {
+  width: 50%;
+}
+
+.our-story .container .story-img img {
+  width: 100%;
+}
+
+.sweet {
+  background-image: url(../images/backtwo.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+  position: relative;
+}
+
+.sweet .overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2;
+}
+
+.sweet .overlay .container .sweet-caption {
+  color: white;
+  text-align: center;
+}
+
+.sweet .overlay .container .sweet-caption h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.sweet .overlay .container .sweet-caption p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  height: 550px;
+  text-align: center;
+}
+
+.menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .container .menu-caption {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 2;
+}
+
+.menu .container .menu-caption h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.menu .container .menu-caption p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu .container .menu-caption a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: red 2px solid;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.menu .container .menu-caption a:hover {
+  color: #433d1c;
+  border-bottom: purple 2px dashed;
+}
+
+.menu .container .menu-img {
+  text-align: left;
+  width: 50%;
+}
+
+.menu .container .menu-img ul {
+  float: right;
+  width: 100%;
+}
+
+.menu .container .menu-img ul li {
+  float: right;
+  list-style: none;
+  width: 50%;
+}
+
+.menu .container .menu-img ul li img {
+  width: 95%;
+  height: 200px;
+}
+
+.hot {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/hot.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hot .overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  line-height: 2;
+}
+
+.hot .overlay .container .hot-caption h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.hot .overlay .container .hot-caption p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.delight {
+  width: 100%;
+  height: 400px;
+  padding: 0px 0;
+}
+
+.delight .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delight .container .delight-caption {
+  text-align: center;
+  width: 50%;
+  padding-left: 40px;
+  line-height: 2;
+}
+
+.delight .container .delight-caption h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.delight .container .delight-caption p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.delight .container .delight-imgs {
+  width: 50%;
+  text-align: left;
+}
+
+.delight .container .delight-imgs ul {
+  width: 100%;
+  float: right;
+}
+
+.delight .container .delight-imgs ul li {
+  width: 50%;
+  float: right;
+  list-style: none;
+}
+
+.delight .container .delight-imgs ul li img {
+  width: 95%;
+  height: 300px;
+}
+
+footer {
+  color: white;
+}
+
+footer .footer {
+  padding: 60px 15%;
+  height: 350px;
+  text-align: center;
+  background-image: url(../images/banner-1-1360x605.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+footer .footer .overlay .footer-about {
+  line-height: 2;
+}
+
+footer .footer .overlay .footer-about h1 {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+footer .footer .overlay .footer-about p {
+  font-size: 14px;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+footer .footer .overlay .footer-contactus {
+  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+footer .footer .overlay .footer-contactus .newsleter h1 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+footer .footer .overlay .footer-contactus .newsleter input {
+  height: 30px;
+  padding-right: 5px;
+}
+
+footer .footer .overlay .footer-contactus .newsleter input:focus {
+  outline: none;
+}
+
+footer .footer .overlay .footer-contactus .social h1 {
+  font-size: 18px;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
+
+footer .footer .overlay .footer-contactus .social .icons {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .overlay .footer-contactus .social .icons a {
+  color: white;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+footer .footer .overlay .footer-contactus .social .icons a:hover {
+  color: blueviolet;
+}
+
+footer .copyright {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright h1 {
+  font-size: 12px;
+}
+
+footer .copyright p {
+  font-size: 10x;
+}
+
+@media screen and (max-width: 992px) {
+  .header .overlay .header-caption {
+    padding: 0 10%;
+    top: 30%;
+  }
+  .header .overlay .nav-bar .container ul {
+    display: none;
+  }
+  .header .overlay .nav-bar .container .hamburger-icon {
+    display: block;
+  }
+  footer .footer {
+    height: 450px;
+  }
+  .sidebar.show {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer {
+    font-size: 18px;
+  }
+  footer .copyright {
+    font-size: 15px;
+  }
+  .header .overlay .header-caption h1 {
+    font-size: 30px;
+  }
+  .header .overlay .header-caption p {
+    font-size: 18px;
+  }
+  .our-story {
+    height: 600px;
+    padding: 0px 0;
+  }
+  .our-story .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-story .container .story-caption {
+    width: 100%;
+    padding-left: 0;
+  }
+  .our-story .container .story-caption h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .our-story .container .story-caption p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .our-story .container .story-img {
+    width: 100%;
+  }
+  .sweet {
+    height: 400px;
+    padding: 0px 0;
+  }
+  .sweet .overlay .container .sweet-caption h1 {
+    font-size: 30px;
+  }
+  .sweet .overlay .container .sweet-caption p {
+    font-size: 18px;
+    margin: auto;
+    line-height: 2;
+    margin-bottom: 10px;
+  }
+  .menu {
+    height: 800px;
+  }
+  .menu .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .container .menu-caption {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .menu .container .menu-caption h1 {
+    font-size: 20px;
+  }
+  .menu .container .menu-caption p {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 10px;
+  }
+  .menu .container .menu-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .menu .container .menu-img ul li img {
+    height: 200px;
+  }
+  .hot {
+    height: 250px;
+  }
+  .hot .overlay .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hot .overlay .container .hot-caption h1 {
+    font-size: 30px;
+  }
+  .hot .overlay .container .hot-caption p {
+    font-size: 20px;
+  }
+  .delight {
+    height: 700px;
+    padding: 0px 0;
+  }
+  .delight .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .delight .container .delight-caption {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .delight .container .delight-caption h1 {
+    font-size: 18px;
+  }
+  .delight .container .delight-caption p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 3;
+    margin-bottom: 10px;
+  }
+  .delight .container .delight-imgs {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .delight .container .delight-imgs ul {
+    width: 100%;
+  }
+  .delight .container .delight-imgs ul li img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header .overlay .header-caption {
+    top: 30%;
+  }
+  .header .overlay .header-caption h1 {
+    font-size: 30px;
+  }
+  .header .overlay .header-caption p {
+    font-size: 15px;
+  }
+  .sweet {
+    height: 500px;
+    padding: 30px 0;
+  }
+  .sweet .overlay .container .sweet-caption h1 {
+    font-size: 25px;
+  }
+  .sweet .overlay .container .sweet-caption p {
+    font-size: 15px;
+  }
+  footer {
+    color: white;
+  }
+  footer .footer {
+    padding: 30px 15%;
+    height: 550px;
+  }
+  footer .footer .overlay .footer-contactus {
+    line-height: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer .overlay .footer-contactus .newsleter {
+    margin-bottom: 20px;
+  }
+  footer .footer .overlay .footer-contactus .newsleter h1 {
+    padding-bottom: 10px;
+  }
+  footer .footer .overlay .footer-contactus .social h1 {
+    padding-bottom: 10px;
+  }
+  .delight {
+    height: 600px;
+  }
+  .delight .container .delight-imgs ul li img {
+    height: 200px;
+  }
+  .menu {
+    height: 750px;
+  }
+  .menu .container .menu-img ul li img {
+    height: 150px;
+  }
+  .our-story {
+    height: 500px;
+  }
+  .our-story .container .story-img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

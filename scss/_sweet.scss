@@ -1,0 +1,33 @@
+.sweet{
+    background-image: url(../images/backtwo.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+    .overlay{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 2;
+            .sweet-caption{
+             
+                color:white;
+                text-align: center;
+                h1{
+                    font-size: $font-size-3;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: $font-size-6;
+                    text-align: center; 
+                }
+            }  
+         }
+    }
+    
+}
