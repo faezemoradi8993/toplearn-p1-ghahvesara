@@ -9,6 +9,7 @@
 body{
     font-family: "vazir";
    direction: rtl;
+   scroll-behavior: smooth;
 }
 *{
     padding: 0;
@@ -17,6 +18,8 @@ body{
 }
 @import "variables";
 @import "base";
+@import "totop";
+@import "topscroll";
 @import "back-container";
 @import "sidebar";
 @import "header";

@@ -1,0 +1,16 @@
+.top-scroll-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0px;
+  right: 0;
+  z-index: 99999;
+  background: linear-gradient(270deg, #c4f6ffd9, #bdfdb1d9);
+  width: 100%;
+  height: 10px;
+}
+.top-scroll-container .top-scroll-bar {
+  height: 10px;
+  width: 0%;
+  background: linear-gradient(262deg, #0da2dd, #1add0d);
+}

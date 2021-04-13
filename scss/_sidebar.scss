@@ -3,14 +3,14 @@
     z-index: 1001;
     width: 33%;
     height: 100vh;
-    top: 70px;
+    top: 100px;
     right:-33%;
     position: fixed;
     background-color: rgba(0,0,0, 0.8);
     transition:all .5s linear;
     ul{
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 100px);
         display: flex;
         flex-direction: column;
         li{ display: flex;
@@ -23,9 +23,7 @@
                 text-decoration: none;
                 color: white;
                 cursor: pointer;
-                &:hover{
-                    color: purple;
-                }
+                
             }
         }
     }
